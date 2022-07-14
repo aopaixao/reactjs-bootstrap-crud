@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import styles from './formularioauxiliar.module.css';
+import styles from './cadastrocategoria.module.css';
 
-const FormularioAuxiliar = () => {
+const CadastroCategoria = () => {
     const [perfil, setPerfil] = useState('');
 
     const handleSubmit = () => {
@@ -29,4 +29,4 @@ const FormularioAuxiliar = () => {
     );
 }
 
-export default FormularioAuxiliar;
+export default CadastroCategoria;

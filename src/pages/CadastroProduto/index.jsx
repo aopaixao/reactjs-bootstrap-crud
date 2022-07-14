@@ -5,10 +5,10 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
-import styles from './formulario.module.css';
-import FormularioAuxiliar from '../FormularioAuxiliar';
+import styles from './cadastroproduto.module.css';
+import CadastroCategoria from '../CadastroCategoria';
 
-const Formulario = () => {
+const CadastroProduto = () => {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [showModal, setShowModal] = useState(false);
@@ -62,11 +62,11 @@ const Formulario = () => {
                     <Modal.Title>Cadastro de Perfil</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <FormularioAuxiliar />
+                    <CadastroCategoria />
                 </Modal.Body>
             </Modal>
         </Container>
     );
 }
 
-export default Formulario;
+export default CadastroProduto;
