@@ -1,0 +1,20 @@
+.btnAddPerfil{
+    background-color: brown;
+    border-radius: 80;
+    padding: 5;
+    border: none;
+}
+
+.btnAddPerfil:hover{
+    background-color: rgb(189, 87, 87);
+    border-radius: 80;
+    padding: 5;
+    border: none;    
+}
+
+.btnAddPerfil:focus{
+    background-color: brown;
+    border-radius: 80;
+    padding: 5;
+    border: none;
+}
