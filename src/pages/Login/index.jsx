@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate } from "react-router-dom";
 import styles from './login.module.css';
 
 const Login = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
 
@@ -13,6 +15,7 @@ const Login = () => {
         event.preventDefault();
         if (email && email.trim() && senha && senha.trim()) {
           localStorage.setItem('token', '123');
+          navigate("/");
         }
     }
 
